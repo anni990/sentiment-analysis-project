@@ -9,7 +9,7 @@ from nltk.corpus import stopwords
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
 # --- Configure Streamlit page ---
-st.set_page_config(page_title="Sentiment Analyzer", page_icon="💬", layout="centered")
+st.set_page_config(page_title="Emotion AI", page_icon="💬", layout="centered")
 
 # --- Load the model and vectorizer ---
 model = joblib.load("sentiment_model.pkl")
@@ -31,7 +31,7 @@ st.markdown(
 )
 
 # --- Header ---
-st.markdown("<h1 style='text-align: center; color: #22C1C3;'>💬 Sentiment Analyzer</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #22C1C3;'>💬 Emotion AI</h1>", unsafe_allow_html=True)
 st.markdown("<p style='color: #FFCB59;'> Detect whether a sentence expresses <b>Positive</b> or <b>Negative</b> sentiment using a Logistic Regression model trained on the IMDB dataset.</p>", unsafe_allow_html=True)
 st.markdown("---")
 
